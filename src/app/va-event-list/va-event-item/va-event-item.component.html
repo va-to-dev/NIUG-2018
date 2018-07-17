@@ -1,0 +1,16 @@
+<a style="text-decoration:none;" href="/iSamples/MemberR/Event_Display.aspx?EventKey={{event.EventID}}">
+  <div style="height:400px; border:solid 1px #337ab7;border-bottom:50px solid #337ab7; margin:10px; padding:0px">
+    <div class="EventImage" [ngStyle]="{'background-image':'url('+event.Image+')'}">  </div>
+    <div style="padding:10px; color:black;"><h2 style="margin-top:5px; color:black; font-weight:bold;">{{event.Title}}</h2>
+    <h3>{{event.BeginDate | date:'longDate'}}</h3>
+    <p>{{event.Description}}</p>
+    </div>
+
+  </div>
+</a>
+    <style type="text/css">
+    .EventImage{
+      float:right;height:66%; width:33%; background-size:cover;
+    }
+    
+    </style>

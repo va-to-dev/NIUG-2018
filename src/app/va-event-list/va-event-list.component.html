@@ -1,0 +1,10 @@
+
+<!--<input style="width:600px; height:33px;" type="text" #searchTerm [(ngModel)]="searchText"/>
+<button type="button" (click)="onSearch(searchTerm.value)" class="btn btn-primary">Search</button>
+<br/><br/>
+<b> You Searched for:</b> {{ search }}
+
+<hr/>
+-->
+<app-va-event-item *ngFor="let eventItem of events | paginate:{itemsPerPage:4, currentPage:p}" [event]="eventItem"></app-va-event-item>
+<pagination-controls (pageChange)="p =$event"></pagination-controls>
